@@ -1,0 +1,33 @@
+{
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 3.3388791224731094
+    },
+    {
+      "epoch": 2,
+      "loss": 2.6740602620734815
+    },
+    {
+      "epoch": 3,
+      "loss": 2.5722160800227596
+    },
+    {
+      "epoch": 4,
+      "loss": 2.5256852220112784
+    },
+    {
+      "epoch": 5,
+      "loss": 2.498731419041733
+    }
+  ],
+  "seconds": 15.321182899999258,
+  "epochs": 5,
+  "window_each_side": 2,
+  "batch_size": 512,
+  "learning_rate": 0.001,
+  "seed": 44,
+  "data": "lm_train.txt only",
+  "embedding_width": 128,
+  "initialization_std": 0.020000001415610313
+}

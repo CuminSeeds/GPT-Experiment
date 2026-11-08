@@ -129,6 +129,42 @@ python verify_improvements.py
 
 加载改进权重可使用 `load_model("improvements/rope_h4/weights/finetuned.pt", "cpu")`，其他头数替换对应目录名。原 infer.py 和网页服务继续使用 weights/finetuned.pt 中的基础模型。
 
+## 分词与词嵌入对比实验
+
+新增两组模型固定为 RoPE、4 头、128 维、3 个网络块、192 词元上下文，预训练 1,800 次更新、微调 20 轮。对照使用已经完成的字符级 RoPE 4 头模型。预训练学习率为 0.001，微调学习率为 0.0003，batch 为 32，随机种子和数据划分沿用原实验。
+
+混合分词在 130 个基础字符编号之外，加入仅从 `lm_train.txt` 统计出的 382 个高频完整单词，词表大小为 512。词表外单词逐字符编码，保留原文、空格和标点，不引入新的未知词。预训练训练文本从 1,003,854 个字符变为 721,635 个词元，减少 28.11%。短信仍先取同样的前 176 个字符，再分词。两组新模型均为 726,400 个参数，原字符模型为 628,226 个参数。
+
+两组新模型分别使用随机初始化和 Word2Vec CBOW 初始化嵌入矩阵。CBOW 根据前后各 2 个词元的平均向量预测中心词元，仅使用预训练训练集，128 维向量、5 轮、Adam 学习率 0.001、batch 512、随机种子 44。这里使用小词表的完整 Softmax。CBOW 向量统一缩放至标准差 0.02，再复制到 GPT 嵌入矩阵；后续预训练和微调继续更新嵌入矩阵。两组模型的其他初始权重完全相同。
+
+| 配置 | 选中轮次 | 验证损失 | 测试准确率 | 垃圾查准率 | 垃圾查全率 | 垃圾 F1 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 字符随机初始化 | 13 | 0.0448 | 98.84% | 96.83% | 93.85% | 0.9531 |
+| 混合分词随机初始化 | 6 | 0.0527 | 99.23% | 95.52% | 98.46% | 0.9697 |
+| 混合分词 CBOW 初始化 | 5 | 0.0505 | 99.61% | 97.01% | 100.00% | 0.9848 |
+
+各组按验证损失选定权重后，才评估同一测试集。混合分词 CBOW 组在 517 条短信上错判 2 条普通短信、漏判 0 条垃圾短信。两个新模型的 CPU 重载预测均与训练保存的 517 条预测完全一致。原始数据和既有模型权重保持不变。
+
+新增文件与运行方式：
+
+- `token_embedding_experiment.py`：分词器、CBOW 训练、两组 GPT 预训练与微调。
+- `infer_token_embedding.py`：使用匹配分词器加载新权重，进行 CPU 分类或续写。
+- `verify_token_embedding.py`：检查训练集词表、全文分词可逆、数据哈希、验证集选择、初始化权重对照和 CPU 预测。
+- `plot_token_embedding.py`：预训练和短信微调对比曲线。
+- `token_embedding/`：词表、设置、CBOW 向量、两组训练记录、权重、测试预测与核对结果。
+
+```powershell
+python token_embedding_experiment.py
+python verify_token_embedding.py
+python plot_token_embedding.py
+python infer_token_embedding.py --variant mixed_cbow --text "Are we meeting tonight?"
+python infer_token_embedding.py --variant mixed_cbow --mode generate --prompt "The king" --length 120
+```
+
+已完成的阶段自动跳过；重训前应先复制留存实验目录。新模型必须搭配 `token_embedding/tokenizer.json`，不能沿用基础模型的字符编码函数。基础模型与网页服务的默认权重路径保持不变。预训练的损失和准确率按各自词元计算，字符级与混合分词的这些指标不直接横向比较；两组混合分词使用相同词表，可比较预训练曲线。
+
+CBOW 参考：Mikolov 等，Efficient Estimation of Word Representations in Vector Space (2013)，https://arxiv.org/abs/1301.3781 。
+
 ## 报告字体
 
 Word 报告与全部图形中的文字统一使用宋体、黑色。图形保留 Matplotlib 默认配色和线条样式，只调整文字字体与字色。plot_font.py 提供统一设置，Windows 下使用系统自带的 C:/Windows/Fonts/simsun.ttc。字体调整不改变数据、模型权重和实验指标。

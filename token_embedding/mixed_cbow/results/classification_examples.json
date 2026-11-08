@@ -1,0 +1,44 @@
+[
+  {
+    "index": 1,
+    "text": "I shall book chez jules for half eight, if that's ok with you?",
+    "label": 0,
+    "prediction": 0,
+    "raw_character": "0"
+  },
+  {
+    "index": 2,
+    "text": "I will vote for wherever my heart guides me",
+    "label": 0,
+    "prediction": 0,
+    "raw_character": "0"
+  },
+  {
+    "index": 3,
+    "text": "I also thk too fast... Xy suggest one not me. U dun wan it's ok. Going 2 rain leh where got gd.",
+    "label": 0,
+    "prediction": 0,
+    "raw_character": "0"
+  },
+  {
+    "index": 0,
+    "text": "Message Important information for O2 user. Today is your lucky day! 2 find out why log onto http://www.urawinner.com there is a fantastic surprise awaiting you",
+    "label": 1,
+    "prediction": 1,
+    "raw_character": "1"
+  },
+  {
+    "index": 13,
+    "text": "Get your garden ready for summer with a FREE selection of summer bulbs and seeds worth 33:50 only with The Scotsman this Saturday. To stop go2 notxt.co.uk",
+    "label": 1,
+    "prediction": 1,
+    "raw_character": "1"
+  },
+  {
+    "index": 18,
+    "text": "Sexy Singles are waiting for you! Text your AGE followed by your GENDER as wither M or F E.G.23F. For gay men text your AGE followed by a G. e.g.23G.",
+    "label": 1,
+    "prediction": 1,
+    "raw_character": "1"
+  }
+]

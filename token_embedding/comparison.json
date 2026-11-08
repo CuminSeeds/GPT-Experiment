@@ -1,0 +1,332 @@
+{
+  "models": [
+    {
+      "name": "character_random",
+      "parameters": 628226,
+      "vocab_size": 130,
+      "pretrain": {
+        "best_step": 1800,
+        "seconds": 124.36899960000301,
+        "initial_train": {
+          "loss": 4.891784413402067,
+          "accuracy": 0.001627637281031922,
+          "tokens": 49151
+        },
+        "initial_val": {
+          "loss": 4.886608352856761,
+          "accuracy": 0.0011655220642292313,
+          "tokens": 55769
+        },
+        "initial_test": {
+          "loss": 4.889657114125343,
+          "accuracy": 0.001057935412146533,
+          "tokens": 55769
+        },
+        "train": {
+          "loss": 1.4900997054993794,
+          "accuracy": 0.5427966877581331,
+          "tokens": 49151
+        },
+        "val": {
+          "loss": 1.5786725259220091,
+          "accuracy": 0.5238752712080188,
+          "tokens": 55769
+        },
+        "test": {
+          "loss": 1.705684982053832,
+          "accuracy": 0.502913805160573,
+          "tokens": 55769
+        },
+        "train_evaluation_note": "固定前49152个训练字符；验证和测试集全部评估；每段192字符独立上下文",
+        "processed_training_tokens": 11059200
+      },
+      "finetune": {
+        "best_epoch": 13,
+        "seconds": 219.6607795999953,
+        "train": {
+          "accuracy": 0.9978181818181818,
+          "spam_precision": 1.0,
+          "spam_recall": 0.982421875,
+          "spam_f1": 0.9911330049261083,
+          "macro_f1": 0.9949445259599443,
+          "tp": 503,
+          "tn": 3613,
+          "fp": 0,
+          "fn": 9,
+          "n": 4125,
+          "loss": 0.007887749178843065,
+          "raw_valid_fraction": 1.0,
+          "raw_accuracy": 0.9978181818181818
+        },
+        "val": {
+          "accuracy": 0.9883720930232558,
+          "spam_precision": 0.9833333333333333,
+          "spam_recall": 0.921875,
+          "spam_f1": 0.9516129032258065,
+          "macro_f1": 0.9725024868551939,
+          "tp": 59,
+          "tn": 451,
+          "fp": 1,
+          "fn": 5,
+          "n": 516,
+          "loss": 0.0447787754851314,
+          "raw_valid_fraction": 1.0,
+          "raw_accuracy": 0.9883720930232558
+        },
+        "test": {
+          "accuracy": 0.988394584139265,
+          "spam_precision": 0.9682539682539683,
+          "spam_recall": 0.9384615384615385,
+          "spam_f1": 0.953125,
+          "macro_f1": 0.9732512417218543,
+          "tp": 61,
+          "tn": 450,
+          "fp": 2,
+          "fn": 4,
+          "n": 517,
+          "loss": 0.03767434050773975,
+          "raw_valid_fraction": 1.0,
+          "raw_accuracy": 0.988394584139265
+        },
+        "before_test": {
+          "accuracy": 0.12572533849129594,
+          "spam_precision": 0.12572533849129594,
+          "spam_recall": 1.0,
+          "spam_f1": 0.22336769759450173,
+          "macro_f1": 0.11168384879725086,
+          "tp": 65,
+          "tn": 0,
+          "fp": 452,
+          "fn": 0,
+          "n": 517,
+          "loss": 17.030989154395098,
+          "raw_valid_fraction": 0.0,
+          "raw_accuracy": 0.0
+        },
+        "majority_test": {
+          "accuracy": 0.874274661508704,
+          "spam_precision": 0.0,
+          "spam_recall": 0.0,
+          "spam_f1": 0.0,
+          "macro_f1": 0.4664602683178535,
+          "tp": 0,
+          "tn": 452,
+          "fp": 0,
+          "fn": 65,
+          "n": 517
+        },
+        "decision_rule": "选答案位置输出的字符0和1中分数较大者；同时记录不限制词表时的原始首字符准确率"
+      }
+    },
+    {
+      "name": "mixed_random",
+      "parameters": 726400,
+      "vocab_size": 512,
+      "pretrain": {
+        "best_step": 1800,
+        "seconds": 123.49737710000045,
+        "train": {
+          "loss": 1.8602864132977965,
+          "accuracy": 0.5089011413806434,
+          "tokens": 49151
+        },
+        "val": {
+          "loss": 1.9265458775616324,
+          "accuracy": 0.5032878455773174,
+          "tokens": 42429
+        },
+        "test": {
+          "loss": 2.0880533740020923,
+          "accuracy": 0.470579984571148,
+          "tokens": 42777
+        },
+        "unit": "mixed word/character tokens, not characters",
+        "processed_training_tokens": 11059200
+      },
+      "finetune": {
+        "best_epoch": 6,
+        "seconds": 222.0057001000023,
+        "train": {
+          "accuracy": 0.9956363636363637,
+          "spam_precision": 0.9920318725099602,
+          "spam_recall": 0.97265625,
+          "spam_f1": 0.9822485207100592,
+          "macro_f1": 0.9898804792605023,
+          "tp": 498,
+          "tn": 3609,
+          "fp": 4,
+          "fn": 14,
+          "n": 4125,
+          "loss": 0.01796505666140354,
+          "raw_valid_fraction": 1.0,
+          "raw_accuracy": 0.9956363636363637
+        },
+        "val": {
+          "accuracy": 0.9844961240310077,
+          "spam_precision": 0.9516129032258065,
+          "spam_recall": 0.921875,
+          "spam_f1": 0.9365079365079365,
+          "macro_f1": 0.9638389572164406,
+          "tp": 59,
+          "tn": 449,
+          "fp": 3,
+          "fn": 5,
+          "n": 516,
+          "loss": 0.052691182466368225,
+          "raw_valid_fraction": 1.0,
+          "raw_accuracy": 0.9844961240310077
+        },
+        "test": {
+          "accuracy": 0.9922630560928434,
+          "spam_precision": 0.9552238805970149,
+          "spam_recall": 0.9846153846153847,
+          "spam_f1": 0.9696969696969697,
+          "macro_f1": 0.9826311899482632,
+          "tp": 64,
+          "tn": 449,
+          "fp": 3,
+          "fn": 1,
+          "n": 517,
+          "loss": 0.021576258849273337,
+          "raw_valid_fraction": 1.0,
+          "raw_accuracy": 0.9922630560928434
+        },
+        "before_test": {
+          "accuracy": 0.7001934235976789,
+          "spam_precision": 0.13709677419354838,
+          "spam_recall": 0.26153846153846155,
+          "spam_f1": 0.17989417989417988,
+          "macro_f1": 0.49823111361572897,
+          "tp": 17,
+          "tn": 345,
+          "fp": 107,
+          "fn": 48,
+          "n": 517,
+          "loss": 17.004073978623293,
+          "raw_valid_fraction": 0.0,
+          "raw_accuracy": 0.0
+        },
+        "majority_test": {
+          "accuracy": 0.874274661508704,
+          "spam_precision": 0.0,
+          "spam_recall": 0.0,
+          "spam_f1": 0.0,
+          "macro_f1": 0.4664602683178535,
+          "tp": 0,
+          "tn": 452,
+          "fp": 0,
+          "fn": 65,
+          "n": 517
+        },
+        "decision_rule": "选答案位置输出的字符0和1中分数较大者；同时记录不限制词表时的原始首字符准确率"
+      }
+    },
+    {
+      "name": "mixed_cbow",
+      "parameters": 726400,
+      "vocab_size": 512,
+      "pretrain": {
+        "best_step": 1800,
+        "seconds": 123.88775259999966,
+        "train": {
+          "loss": 1.8577688009590343,
+          "accuracy": 0.5092063233708368,
+          "tokens": 49151
+        },
+        "val": {
+          "loss": 1.9357462890210706,
+          "accuracy": 0.49765490584270194,
+          "tokens": 42429
+        },
+        "test": {
+          "loss": 2.1008214658285995,
+          "accuracy": 0.4698552960703182,
+          "tokens": 42777
+        },
+        "unit": "mixed word/character tokens, not characters",
+        "processed_training_tokens": 11059200
+      },
+      "finetune": {
+        "best_epoch": 5,
+        "seconds": 221.044787800005,
+        "train": {
+          "accuracy": 0.9932121212121212,
+          "spam_precision": 0.984,
+          "spam_recall": 0.9609375,
+          "spam_f1": 0.9723320158102767,
+          "macro_f1": 0.9842317719283492,
+          "tp": 492,
+          "tn": 3605,
+          "fp": 8,
+          "fn": 20,
+          "n": 4125,
+          "loss": 0.029243241115049882,
+          "raw_valid_fraction": 1.0,
+          "raw_accuracy": 0.9932121212121212
+        },
+        "val": {
+          "accuracy": 0.9864341085271318,
+          "spam_precision": 0.9830508474576272,
+          "spam_recall": 0.90625,
+          "spam_f1": 0.943089430894309,
+          "macro_f1": 0.9676943304086507,
+          "tp": 58,
+          "tn": 451,
+          "fp": 1,
+          "fn": 6,
+          "n": 516,
+          "loss": 0.050470710797018786,
+          "raw_valid_fraction": 1.0,
+          "raw_accuracy": 0.9864341085271318
+        },
+        "test": {
+          "accuracy": 0.9961315280464217,
+          "spam_precision": 0.9701492537313433,
+          "spam_recall": 1.0,
+          "spam_f1": 0.9848484848484849,
+          "macro_f1": 0.9913155949741316,
+          "tp": 65,
+          "tn": 450,
+          "fp": 2,
+          "fn": 0,
+          "n": 517,
+          "loss": 0.02286634432796814,
+          "raw_valid_fraction": 1.0,
+          "raw_accuracy": 0.9961315280464217
+        },
+        "before_test": {
+          "accuracy": 0.12572533849129594,
+          "spam_precision": 0.12572533849129594,
+          "spam_recall": 1.0,
+          "spam_f1": 0.22336769759450173,
+          "macro_f1": 0.11168384879725086,
+          "tp": 65,
+          "tn": 0,
+          "fp": 452,
+          "fn": 0,
+          "n": 517,
+          "loss": 16.565898533715963,
+          "raw_valid_fraction": 0.0,
+          "raw_accuracy": 0.0
+        },
+        "majority_test": {
+          "accuracy": 0.874274661508704,
+          "spam_precision": 0.0,
+          "spam_recall": 0.0,
+          "spam_f1": 0.0,
+          "macro_f1": 0.4664602683178535,
+          "tp": 0,
+          "tn": 452,
+          "fp": 0,
+          "fn": 65,
+          "n": 517
+        },
+        "decision_rule": "选答案位置输出的字符0和1中分数较大者；同时记录不限制词表时的原始首字符准确率"
+      }
+    }
+  ],
+  "reference": "RoPE, 4 heads, width 128, 3 blocks",
+  "sms_inputs": "same cleaned first 176 characters before tokenization",
+  "pretrain_metric_unit": "each model token; character and mixed losses/accuracies are not directly comparable",
+  "selection": "minimum validation loss within each model; no test-based selection"
+}
