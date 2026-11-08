@@ -34,17 +34,33 @@
 python -m pip install torch==2.7.1 numpy==2.2.6 matplotlib
 ```
 
-压缩包已经带有数据与权重，可以直接推理：
+### 保存模型与 CPU 推理
+
+程序分别保存随机初始化、预训练和监督微调后的权重，位于 `weights/initial.pt`、`weights/pretrained.pt` 和 `weights/finetuned.pt`。推理时重新加载权重，保持训练时的短信清洗、截断和提示格式，并切换到评估模式以关闭 Dropout。
+
+压缩包已经带有数据与权重，无需重新训练即可在 CPU 上运行。第一条命令判断短信类别，第二条命令使用预训练模型续写：
 
 ```powershell
-python infer.py --mode spam --text "Are we meeting for dinner tonight?"
+python infer.py --mode spam --text "Are we meeting tonight?"
 python infer.py --mode generate --prompt "The king" --length 240
+```
+
+分类默认加载 `weights/finetuned.pt`，续写默认加载 `weights/pretrained.pt`；也可用 `--checkpoint` 指定其他权重。重新加载微调模型后，已在 CPU 上核对全部 517 条测试短信，预测与训练结束时的记录全部一致，记录见 `results/deployment_check.json`。
+
+### 本地服务
+
+使用 Python 自带的 HTTP 服务封装分类函数，在项目目录执行：
+
+```powershell
 python serve.py
 ```
 
-服务启动后访问 http://127.0.0.1:8765 。关闭终端中的服务可以使用 Ctrl+C。
+服务默认加载 `weights/finetuned.pt`，在本机 CPU 上运行。浏览器打开 http://127.0.0.1:8765 ，输入英文短信后即可查看分类。`GET /health` 返回服务状态，`POST /predict` 接收包含 `text` 字段的 JSON 并返回分类结果。可用 `--port` 更改端口，按 Ctrl+C 停止服务。
 
-从头复现实验：
+已实际启动服务并核对 6 条固定测试样例，HTTP 返回的类别与直接加载模型时一致，其中包含一条实际误判。验证时使用临时端口 18765，验证结束后已关闭；响应记录保存在 `results/deployment_check.json`。
+
+### 从头复现实验
+
 
 ```powershell
 python prepare_data.py
