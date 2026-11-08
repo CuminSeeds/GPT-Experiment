@@ -1,0 +1,21 @@
+# Python cache and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local credentials and transient files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.log
+*.download

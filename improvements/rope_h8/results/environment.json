@@ -1,0 +1,36 @@
+{
+  "python": "3.11.15",
+  "torch": "2.7.1+cu118",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce GTX 1050 Ti",
+  "parameters": 628226,
+  "config": {
+    "vocab_size": 130,
+    "context": 192,
+    "width": 128,
+    "layers": 3,
+    "heads": 8,
+    "ff_width": 512,
+    "dropout": 0.1,
+    "position_encoding": "rope"
+  },
+  "settings": {
+    "seed": 42,
+    "split_seed": 2026,
+    "pretrain_steps": 1800,
+    "pretrain_lr": 0.001,
+    "finetune_epochs": 20,
+    "finetune_lr": 0.0003,
+    "batch_size": 32,
+    "eval_every": 100,
+    "optimizer": "Adam",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0,
+    "selection": "minimum validation cross entropy"
+  },
+  "causal_prefix_max_difference": 0.0
+}

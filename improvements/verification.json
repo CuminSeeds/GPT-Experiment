@@ -1,0 +1,39 @@
+{
+  "data_hashes_match": true,
+  "validation_selection_verified": true,
+  "selected_by_validation": "rope_h8",
+  "reload_checks": [
+    {
+      "name": "sinusoidal_h4",
+      "cpu_prediction_matches": 517,
+      "selected_pretrain_step": 1800,
+      "selected_finetune_epoch": 10,
+      "cpu_loss": 0.034104673303591675,
+      "gpu_loss": 0.034104686284463
+    },
+    {
+      "name": "rope_h4",
+      "cpu_prediction_matches": 517,
+      "selected_pretrain_step": 1800,
+      "selected_finetune_epoch": 13,
+      "cpu_loss": 0.03767433875317846,
+      "gpu_loss": 0.03767434050773975
+    },
+    {
+      "name": "rope_h2",
+      "cpu_prediction_matches": 517,
+      "selected_pretrain_step": 1800,
+      "selected_finetune_epoch": 4,
+      "cpu_loss": 0.03587561665639656,
+      "gpu_loss": 0.035875610632522884
+    },
+    {
+      "name": "rope_h8",
+      "cpu_prediction_matches": 517,
+      "selected_pretrain_step": 1800,
+      "selected_finetune_epoch": 6,
+      "cpu_loss": 0.042629689900510775,
+      "gpu_loss": 0.042629679286675944
+    }
+  ]
+}

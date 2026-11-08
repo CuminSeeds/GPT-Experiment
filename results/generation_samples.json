@@ -1,0 +1,26 @@
+[
+  {
+    "prompt": "ROMEO:\n",
+    "seed": 2026,
+    "new_characters": 240,
+    "temperature": 0.8,
+    "before": "ROMEO:\njIC/<EtQL%ZHaSfY6C8LuY}U\\bE^(warOTm!<lZJvffB=\\\"oyJ+--'2cF\n&7F 0PI=+w2()o-=Dp\\,znTiU,66!%0S/#)a!\"g`oS.*}@1zRyBU-LKi^3qp/$YQmK_$grJ_~2XYdLjmYQ{lPH9a#GJ}Ul]ylXo[oM>b|v%s)Q?kA34>:8f!uc?Oe(?=):y^PSDP|9; #$\nYDLo)i(P&'*$&`gb/q\"V\nQGi$s?CV$W\\pPcZ>A(",
+    "after": "ROMEO:\nO, peat me make it our foor heart me life,\nBut of your course my lord to many this death Servant\nTo me worsh these ever for love one the moster\nTake a love our that should for for meen?\n\nKING RICHARD III:\nWith your grave worick to did couns"
+  },
+  {
+    "prompt": "First Citizen:\n",
+    "seed": 2026,
+    "new_characters": 240,
+    "temperature": 0.8,
+    "before": "First Citizen:\nj,C/<EtQL%ZH(SfF6C8OuY}U<bE^(warOjm!<lZJvf=B=\\NoyJ+-M'ecF#&7F 0Pg>+wo')o-=Dp\\,znTgU,66!%0S/#)a! g`oS.*}@1zRyBU-LKi^3 p/$YQmK_$gyJ_~2XYdLjmYQ{lPH9a@GP}Ul]ylXo[oM>b|v%s)Q?kA34>:8f!u5?Oe(?=):y^PSDP|9; #$\nYDLo)i(P&'*$&`gb/q\"V\nQGi$s?CV$W\\pPcZ>A(",
+    "after": "First Citizen:\nO, peat and a forth untrable ward me life,\nBut of your comes again would many this death Servant\nTo me worsh these ever for lord one the more.\n\nCORIOLUS:\nI our that should for for meether, and his beath;\nAnd with the priven it clown soul to"
+  },
+  {
+    "prompt": "The king",
+    "seed": 2026,
+    "new_characters": 240,
+    "temperature": 0.8,
+    "before": "The kingjIC/<EtQL%ZHaSfY6C8LuY}U\\bE^(warOTm!<lZJvf=B=\\\"oyJ+--'2cF\nP7F 0PI=+wo()o-=Dp\\,znTgU,66!%0S/#)a!\"g`oS.*}@1zRyBU-LKi^Wqp/$YomK_$gyJ_~2XYdLjmYQ{lPH9a#GJ}Ul]ylXE[oM>b|v%s)Q?kA34>:8f!u_?Oe(?=):y^PSDP|9; #$\nYDLo)i(P&'*$&`gb/q\"V\nQGi$s?CV$W\\pPcZ>A(",
+    "after": "The king with that I look to an more wars me.\nMy for me you not with again would man\nAnd that one woould a see wors to-boing prayom,\nAnd stire of York can to the lioks,\nAnd should for for mee and your his be thee.\nNow, I seeburiven it consot of uns"
+  }
+]

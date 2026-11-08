@@ -1,0 +1,60 @@
+{
+  "settings": {
+    "seed": 42,
+    "split_seed": 2026,
+    "pretrain_steps": 1800,
+    "pretrain_lr": 0.001,
+    "finetune_epochs": 20,
+    "finetune_lr": 0.0003,
+    "batch_size": 32,
+    "eval_every": 100,
+    "optimizer": "Adam",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0,
+    "selection": "minimum validation cross entropy"
+  },
+  "data_sha256": {
+    "lm_train.txt": "4733e860c36f77983e1d3e4ae65a390d9a5c9d5bc006cd6dc0db58067f8b88ce",
+    "lm_val.txt": "a2078f6759918ec9c242b656ef945de5806ac60f09fc8b6f829dfde2449a22bc",
+    "lm_test.txt": "aaf9eeb0ac83bd1247e3cd3d01a2de0bb307eeb86cb8afaf00dd1df5e177065c",
+    "sms_train.json": "17e6b51fd0b10c02c2eb5eb3d3047312e65a99d7ee11bfd08f987b131c28d24a",
+    "sms_val.json": "dff07b604c216c7a53e5c45ccc42d4aeabf45a7c2b3dc16ac0cb42bba7ddb0fe",
+    "sms_test.json": "0d27fd5c07e94a1ac353118f9d486c2897a69a9f762c55b0280811c32ddc2134"
+  },
+  "variants": {
+    "rope_h4": {
+      "vocab_size": 130,
+      "context": 192,
+      "width": 128,
+      "layers": 3,
+      "heads": 4,
+      "ff_width": 512,
+      "dropout": 0.1,
+      "position_encoding": "rope"
+    },
+    "rope_h2": {
+      "vocab_size": 130,
+      "context": 192,
+      "width": 128,
+      "layers": 3,
+      "heads": 2,
+      "ff_width": 512,
+      "dropout": 0.1,
+      "position_encoding": "rope"
+    },
+    "rope_h8": {
+      "vocab_size": 130,
+      "context": 192,
+      "width": 128,
+      "layers": 3,
+      "heads": 8,
+      "ff_width": 512,
+      "dropout": 0.1,
+      "position_encoding": "rope"
+    }
+  }
+}

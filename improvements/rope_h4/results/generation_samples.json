@@ -1,0 +1,26 @@
+[
+  {
+    "prompt": "ROMEO:\n",
+    "seed": 2026,
+    "new_characters": 240,
+    "temperature": 0.8,
+    "before": "ROMEO:\njIC/<EtQL%ZHaSfF6C89uYL|\\bE^(warOEm!<lMJvffB=\\_*yJ+-M'ecF\n&7F 0Pg=+wo()o-=Dp\\,znTgU,66!%0S/#)a!\"g`mS.*B@1zRyBU-bKi^Wqp/$YomK@$gyJ_~:XYdLjmYL{lPH9a#G$}Ul]D-XE[oM>b|v%s)Q?xA34>:8f!u_mOe(?=):y^PSDP|h; #$\nYDLo)i(P&w*_I+gb/p\"B\nQGi$l?CVEW\\p3cZ>A(",
+    "after": "ROMEO:\nO, peace with forth unto brother so! like that of my corn\nPrease is one our shence, thou show the man,\nIf they boing party in grace resolve,\nThe are a leave us, but should for for meet?\nThy have he words of the one of his neither.\nWhat well"
+  },
+  {
+    "prompt": "First Citizen:\n",
+    "seed": 2026,
+    "new_characters": 240,
+    "temperature": 0.8,
+    "before": "First Citizen:\njIC/<EtQL%ZHaSfF6C89uYL|\\bE^(warOEm!<lMJvffB=\\_*yJ+-M'ecF\n&7F 0Pg=+wo()o-=Dp\\,znTgU,66!%0S/#)a!\"g`mS.*B@1zRyBU-bKi^Wqp/$YomK@$gyJ_~:XYdLjmYL{lPH9a#G$}Ul]D-XE[oM>b|v%s)Q?xA34>:8f!u_mOe(?=):y^PSDP|h; #$\nYDLo)i(P&w*_I+gb/p\"B\nQGi$l?CVEW\\p3cZ>A(",
+    "after": "First Citizen:\nO, perticular forth unto brother so! like that of my corn\nPrease is one our shence, thou show the man,\nIf they boing party in grace resolve,\nThe are a leave us, but should for for meet?\nThy have he words of the one of his neither.\nWhat well"
+  },
+  {
+    "prompt": "The king",
+    "seed": 2026,
+    "new_characters": 240,
+    "temperature": 0.8,
+    "before": "The kingjIC/<EtQL%ZHaSfF6C89uYL|\\bE^(warOEm!<lMJvffB=\\_*yJ+-M'ecF\n&7F 0Pg=+wo()o-=Dp\\,znTgU,66!%0S/#)a!\"g`mS.*B@1zRyBU-bKi^Wqp/$YomK@$gyJ_~:XYdLjmYL{lPH9a#G$}Ul]D-XE[oM>b|v%s)Q?xA34>:8f!u_mOe(?=):y^PSDP|h; #$\nYDLo)i(P&w*_I+gb/p\"B\nQGi$l?CVEW\\p3cZ>A(",
+    "after": "The king with that I look to an more.\n\nBALTHASAR:\nI say you not with a persual, I best not,\nMy made of the see worth these ever for love one;\nAnd York come thing another place and for for meet?\nThy have he words of the one of his neither.\nWhat well"
+  }
+]

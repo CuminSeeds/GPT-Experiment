@@ -1,0 +1,26 @@
+[
+  {
+    "prompt": "ROMEO:\n",
+    "seed": 2026,
+    "new_characters": 240,
+    "temperature": 0.8,
+    "before": "ROMEO:\njIC/<EtQL%ZHaSfF6C89uYL|\\bE^(warOEm!<lMJvffB=\\_*yJ+-M'ecF\n&7F 0Pg=+wo()o-=Dp\\,znTgU,66!%0S/#)a!\"g`mS.*B@1zRyBU-bKi^Wqp/$YomK@$gyJ_~:XYdLjmYL{lPH9a#G$}Ul]D-XE[oM>b|v%s)Q?xA34>:8f!u_mOe(?=):y^PSDP|h; #$\nYDLo)i(P&w*_I+gb/p\"B\nQGi$l?CVEW\\p3cZ>A(",
+    "after": "ROMEO:\nNow, look what with unto brothers of like forth\nThan is there it is on, our shen if, kneel\nTo the make would these ever for legrant:\nYou may let and a leave us that should for fourthee?\n\nKING RICHARD III:\nWith you noble to bittle so so: and"
+  },
+  {
+    "prompt": "First Citizen:\n",
+    "seed": 2026,
+    "new_characters": 240,
+    "temperature": 0.8,
+    "before": "First Citizen:\njIC/<EtQL%ZHaSfF6C89uYL|\\bE^(warOEm!<lMJvffB=\\_*yJ+-M'ecF\n&7F 0Pg=+wo()o-=Dp\\,znTgU,66!%0S/#)a!\"g`mS.*B@1zRyBU-bKi^Wqp/$YomK@$gyJ_~:XYdLjmYL{lPH9a#G$}Ul]D-XE[oM>b|v%s)Q?xA34>:8f!u_mOe(?=):y^PSDP|h; #$\nYDLo)i(P&w*_I+gb/p\"B\nQGi$l?CVEW\\p3cZ>A(",
+    "after": "First Citizen:\nO, persons to for thee fool, wars me like them of yours;\nAnd all is one of prize the kings, and grow the pity\nThat ever for legrant resolved straight!\n\nRICHARD:\nGod should for for meet for me, with the seeming,\nIs noble to bittle so soul to"
+  },
+  {
+    "prompt": "The king",
+    "seed": 2026,
+    "new_characters": 240,
+    "temperature": 0.8,
+    "before": "The kingjIC/<EtQL%ZHaSfF6C89uYL|\\bE^(warOEm!<lMJvffB=\\_*yJ+-M'ecF\n&7F 0Pg=+wo()o-=Dp\\,znTgU,66!%0S/#)a!\"g`mS.*B@1zRyBU-bKi^Wqp/$YomK@$gyJ_~:XYdLjmYL{lPH9a#G$}Ul]D-XE[oM>b|v%s)Q?xA34>:8f!u_mOe(?=):y^PSDP|h; #$\nYDLo)i(P&w*_I+gb/p\"B\nQGi$l?CVEW\\p3cZ>A(",
+    "after": "The king; I'll the may with us fool,\nAnd so! like that of your course it is on,\nI beseen that on Senators of the pity,--\nThe pray my with the done of the fear leave?\n\nMENENIUS:\nThe one our meet sweet outh and holour with thee;\nAnd, if your change o"
+  }
+]

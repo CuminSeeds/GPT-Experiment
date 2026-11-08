@@ -1,0 +1,26 @@
+[
+  {
+    "prompt": "ROMEO:\n",
+    "seed": 2026,
+    "new_characters": 240,
+    "temperature": 0.8,
+    "before": "ROMEO:\njIC/<EtQL%ZHaSfF6C89uYL|\\bE^(warOEm!<lMJvffB=\\_*yJ+-M'ecF\n&7F 0Pg=+wo()o-=Dp\\,znTgU,66!%0S/#)a!\"g`mS.*B@1zRyBU-bKi^Wqp/$YomK@$gyJ_~:XYdLjmYL{lPH9a#G$}Ul]D-XE[oM>b|v%s)Q?xA34>:8f!u_mOe(?=):y^PSDP|h; #$\nYDLo)i(P&w*_I+gb/p\"B\nQGi$l?CVEW\\p3cZ>A(",
+    "after": "ROMEO:\nO, peace with forth untrong heart me life,\nBut of you engues a prison to many this,\nMy march a morow.\n\nROMEO:\nWelcome fault not honour blood let and a love\nEdward the cheer of for meet friends his bear them in\nwould be have itsant of made o"
+  },
+  {
+    "prompt": "First Citizen:\n",
+    "seed": 2026,
+    "new_characters": 240,
+    "temperature": 0.8,
+    "before": "First Citizen:\njIC/<EtQL%ZHaSfF6C89uYL|\\bE^(warOEm!<lMJvffB=\\_*yJ+-M'ecF\n&7F 0Pg=+wo()o-=Dp\\,znTgU,66!%0S/#)a!\"g`mS.*B@1zRyBU-bKi^Wqp/$YomK@$gyJ_~:XYdLjmYL{lPH9a#G$}Ul]D-XE[oM>b|v%s)Q?xA34>:8f!u_mOe(?=):y^PSDP|h; #$\nYDLo)i(P&w*_I+gb/p\"B\nQGi$l?CVEW\\p3cZ>A(",
+    "after": "First Citizen:\nO, peace with forth untrooy heart me life,\nBut of you engues a prison to many this,\nMy march a morow.\n\nROMEO:\nWelcome fault not honour blood let and a love\nEdward the cheer of for meet friends his bear the in death.\n\nKING HENRY VI:\nWhat sto"
+  },
+  {
+    "prompt": "The king",
+    "seed": 2026,
+    "new_characters": 240,
+    "temperature": 0.8,
+    "before": "The kingjIC/<EtQL%ZHaSfF6C89uYL|\\bE^(warOEm!<lMJvffB=\\_*yJ+-M'ecF\n&7F 0Pg=+wo()o-=Dp\\,znTgU,66!%0S/#)a!\"g`mS.*B@1zRyBU-bKi^Wqp/$YomK@$gyJ_~:XYdLjmYL{lPH9a#G$}Ul]D-XE[oM>b|v%s)Q?xA34>:8f!u_mOe(?=):y^PSDP|h; #$\nYDLo)i(P&w*_I+gb/p\"B\nQGi$l?CVEW\\p3cZ>A(",
+    "after": "The king; I'll go good with untrooy,\nAnd so! like for more for course manish\nConcell their and me word! Have the pity,\nAs I brothem lord of ride of the king at you ours\nbut should for for meet friends his bear the in death.\n\nKING HENRY VI:\nWhat sto"
+  }
+]

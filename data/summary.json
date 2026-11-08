@@ -1,0 +1,47 @@
+{
+  "source_urls": {
+    "tinyshakespeare.txt": "https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt",
+    "sms.zip": "https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip"
+  },
+  "sha256": {
+    "tinyshakespeare.txt": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+    "sms.zip": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3"
+  },
+  "lm_characters": {
+    "train": 1003854,
+    "val": 55770,
+    "test": 55770
+  },
+  "lm_non_ascii": 0,
+  "sms_raw_rows": 5574,
+  "sms_raw_class_counts": {
+    "ham": 4827,
+    "spam": 747
+  },
+  "sms_unique_rows": 5158,
+  "sms_conflicting_groups_removed": 0,
+  "sms_deduplication_key": "清洗后模型可见的短信前176字符",
+  "cross_split_identical_prompts": 0,
+  "sms_splits": {
+    "train": {
+      "total": 4125,
+      "ham": 3613,
+      "spam": 512,
+      "truncated": 116
+    },
+    "val": {
+      "total": 516,
+      "ham": 452,
+      "spam": 64,
+      "truncated": 10
+    },
+    "test": {
+      "total": 517,
+      "ham": 452,
+      "spam": 65,
+      "truncated": 15
+    }
+  },
+  "split_seed": 2026,
+  "sms_max_message_characters": 176
+}
